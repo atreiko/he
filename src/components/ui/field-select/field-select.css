@@ -1,0 +1,36 @@
+.select {
+  @apply px-2 py-1 w-full 
+  bg-neutral-900 rounded-xl shadow-md 
+  border border-neutral-700 
+  focus:border-neutral-500 focus:outline-none focus:ring-neutral-700 focus:ring-1 
+  focus:bg-transparent;
+}
+
+.select:disabled {
+  @apply border-neutral-800;
+}
+
+.selectLabel {
+  @apply relative inline-block my-1
+
+  after:absolute
+  after:content-[attr(data-tooltip)]
+  after:px-2 after:py-1
+
+  after:translate-y-1/2 after:-top-6
+  after:left-0
+  after:w-max after:max-w-xs
+
+  after:text-neutral-400
+  after:bg-neutral-700
+  after:border-neutral-600
+  after:border after:rounded-xl
+
+  after:opacity-0 after:hidden
+  hover:after:opacity-100 hover:after:block 
+  hover:cursor-pointer
+  transition-all
+  
+  after:z-10;
+}
+

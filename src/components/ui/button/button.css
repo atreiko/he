@@ -1,0 +1,24 @@
+.button-clean {
+  @apply flex items-center gap-4
+  hover:text-neutral-500
+  disabled:text-neutral-600;
+}
+.button-primary {
+  @apply flex items-center gap-4 
+  px-4 py-1 
+  rounded-xl border border-neutral-500 
+  text-neutral-400
+  hover:border-neutral-600 hover:bg-neutral-300 hover:text-neutral-900
+  focus:border-neutral-700
+  disabled:text-neutral-600 disabled:border-neutral-600
+  shadow-sm shadow-neutral-950;
+}
+.button-secondary {
+  @apply flex items-center gap-4 
+  px-4 py-1 
+  rounded-xl border border-transparent 
+  text-neutral-400
+  hover:text-neutral-500
+  focus:border-transparent focus:bg-transparent
+  disabled:text-neutral-600;
+}
